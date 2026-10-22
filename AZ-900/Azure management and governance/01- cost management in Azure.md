@@ -47,7 +47,7 @@
 ### Analogy Breakdown
 
 * **Reservations:** **Locking in a Specific Resource** (like reserving a designated parking spot for a specific car).
-* **Savings Plan:** **Locking in a Specific Spend Amount** (like committing to spend a set amount on parking, regardless of which spot you use).
+* **Savings Plan:** **Locking in a Specific Spend Amount** (like committing to spend a set amount on parking, regardless of which spot you use). Only for compute.
 
 
 # Azure Pricing Calculator:
@@ -69,3 +69,22 @@
    * **Credit**: Auto-alerts at **90%** and **100%** of Azure Prepayment (EA).
    * **Department Quota**: Alerts when EA department spending hits set limits.
 3. **Budgets**: Set spending limits + trigger automated actions (e.g., auto-shutdown idle dev VMs).
+
+
+# Azure Resource Tags
+
+- Tags are name:value pairs (metadata) used to organize resources, e.g. `Environment : Prod`
+- Can be applied to resources, resource groups and subscriptions
+- Resources **don't inherit** tags from subscriptions or resource groups
+- Can be applied with Portal, CLI, PowerShell, Azure Resource Manager (ARM) Templates / Bicep, Terraform
+- Azure Policy can enforce tagging rules (require, add or inherit tags)
+- Tags don't trigger actions by themselves. Automation (Policy, Logic Apps, Functions, Automation runbooks) can use tags to select resources and act on them
+- Limit: 50 tags per resource
+- Don't store secrets in tags (they are visible in billing and logs)
+
+# Azure Resource Manager (ARM) Templates
+
+- JSON files that define Azure resources (Infrastructure as Code)
+- Declarative and repeatable: same template, same result
+- Sections: parameters, variables, resources, outputs
+- Bicep is a simpler language that compiles to ARM
