@@ -71,3 +71,23 @@ A user can have permission to create a VM (RBAC) and still be blocked by a polic
 - It evaluates **existing** resources too, not just new ones.
 - It can **deny, audit, append, modify**, and **remediate**.
 - Don’t confuse it with **Purview** (data governance), **Defender for Cloud** (security posture and threats), or **resource locks** (prevent deletion or modification).
+
+
+# Resource locks
+
+- Designed to **prevent accidental deletion** and/or **modification**
+- Used in conjunction with RBAC
+- Two types of locks
+    - **Read-only** (**ReadOnly**) – only read actions are allowed
+    - **Delete** (**CanNotDelete**) – all actions except delete are allowed
+- Scopes are **hierarchical** (**inherited**)
+    - Subscriptions > Resource Groups > Resources
+- **Management Groups** can’t be locked
+- Only **Owner** and **User Access Administrator** roles can manage locks (**built-in** roles)
+
+
+# Service Trust portal
+It’s Microsoft’s public library of proof that its cloud is secure, private and compliant. If your company or an auditor asks “how do you know Azure is safe and follows the rules?”, this is where you look.
+
+
+**Memory trick:** _Purview and Policy manage YOUR stuff. Service Trust Portal shows MICROSOFT’s proof._
