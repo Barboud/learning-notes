@@ -62,7 +62,7 @@
 
 * **Purpose**: Analyze, monitor, and optimize Azure spend.
 
-## Core Features
+## Core Features >>>> focus here
 1. **Cost Analysis**: Visual insights on spending by region, resource, subscription, or period.
 2. **Cost Alerts**:
    * **Budget**: Triggers when spend crosses user-defined limits.

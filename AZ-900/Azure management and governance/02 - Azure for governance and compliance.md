@@ -1,5 +1,7 @@
 # Microsoft Purview
 
+is a suite of tools from Microsoft that helps organizations discover, understand, classify, and manage their data.
+
 ### Easy way to remember it
 
 - **Purview = “Where is my data, what is it, and is it safe and compliant?”**
@@ -13,6 +15,13 @@
 - Know the **three capabilities**: discovery, classification, lineage.
 - Don’t confuse it with **Microsoft Defender for Cloud** (security posture and threat protection for your resources) or **Azure Policy** (rules for resource configuration). Purview is about **data**, not resources.
 
+
+* Summary to Remember: *
+
+> Microsoft Purview = Data Governance + Risk & Compliance
+- Discovery = Where is the data located?
+- Classification = What type of data is it?
+- Lineage = Where did the data come from, and where did it go?
 
 # Azure Policy
 
@@ -82,12 +91,14 @@ A user can have permission to create a VM (RBAC) and still be blocked by a polic
     - **Delete** (**CanNotDelete**) – all actions except delete are allowed
 - Scopes are **hierarchical** (**inherited**)
     - Subscriptions > Resource Groups > Resources
-- **Management Groups** can’t be locked
+- **Management Groups** can’t be locked >>>> Be award!
 - Only **Owner** and **User Access Administrator** roles can manage locks (**built-in** roles)
 
 
 # Service Trust portal
 It’s Microsoft’s public library of proof that its cloud is secure, private and compliant. If your company or an auditor asks “how do you know Azure is safe and follows the rules?”, this is where you look.
 
+## To see that
+use this link https://servicetrust.microsoft.com/
 
 **Memory trick:** _Purview and Policy manage YOUR stuff. Service Trust Portal shows MICROSOFT’s proof._
