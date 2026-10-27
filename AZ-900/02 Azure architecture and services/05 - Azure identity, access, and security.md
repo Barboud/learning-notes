@@ -54,3 +54,30 @@
 - Legacy application requiring LDAP/Kerberos → **Entra Domain Services**
 - One sign-in for multiple apps → **SSO**
 - Extra authentication factors → **MFA**
+
+
+# Azure authentication methods
+
+
+## 1. Authentication
+Verifies who you are.
+## 2. Single Sign-On (SSO)
+## 3. Multifactor Authentication (MFA)
+**Remember:** MFA protects accounts even if the password is compromised.
+
+## 4. Passwordless Authentication
+Sign in without a password.
+Microsoft Entra ID supports:
+- **Windows Hello for Business:** PIN or biometrics on a trusted device.
+- **Microsoft Authenticator:** Phone-based approval.
+- **FIDO2 security keys:** Hardware security keys.
+    
+
+## Exam — Remember
+- Sign in once for multiple apps → **SSO**
+- Extra authentication factors → **MFA**
+- No password required → **Passwordless authentication**
+- Fingerprint or face → **Something you are**
+- Phone or security key → **Something you have**
+- Password or PIN → **Something you know**
+
