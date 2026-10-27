@@ -81,3 +81,28 @@ Microsoft Entra ID supports:
 - Phone or security key → **Something you have**
 - Password or PIN → **Something you know**
 
+
+# Azure external identities
+
+Main idea: External Identities allow people outside your organization to access your apps and resources securely.
+
+### What to remember
+
+- Microsoft Entra External ID: Manages identities for external users.
+    
+- B2B collaboration: Invite external users, such as business partners or guests, to access your organization's resources using their own identities.
+    
+- B2C / customer identity: Lets customers sign in to your applications. Microsoft’s current terminology and product offerings distinguish customer identity scenarios from workforce B2B collaboration.
+    
+
+Memory trick: B2B = business guests. Customer identity = people using your app.
+
+### Three types to memorize
+
+|Type|Purpose|
+|---|---|
+|B2B collaboration|Guest users access your organization's apps and resources.|
+|B2B direct connect|External users collaborate through Teams shared channels without guest accounts in your directory.|
+|External ID for customers|Customers sign in to your applications.|
+
+Also remember: Access reviews help verify whether guests still need access and remove access when it's no longer required.
