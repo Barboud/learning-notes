@@ -139,8 +139,6 @@ Conditional Access is a Microsoft Entra ID feature that allows or blocks access 
 **Memory trick:** Conditional Access = Check conditions, then allow, challenge, or block.
 
 # 5. Azure role-based access control (RBAC)
-
-## What is it?
 Azure RBAC manages **who can access Azure resources and what they can do**.
 
 ## Key Concepts
@@ -214,3 +212,53 @@ Defense-in-depth is a security strategy that uses **multiple layers of protectio
 **Memory trick:** Defense-in-depth = Multiple security layers; if one fails, others help protect you.
 
 # 8. Encryption and key management in Azure
+
+## Encryption and Key Management
+
+- **Encryption at rest:** Protects stored data (disks, databases, storage).
+- **Encryption in transit:** Protects data moving between services, applications, and users.
+
+### Azure Key Vault
+Securely stores and manages:
+- **Secrets:** Passwords, connection strings.
+- **Encryption keys:** Keys used to encrypt/decrypt data.
+- **Certificates:** Used for TLS/SSL.
+
+### Key Management Benefits
+- Access control: Restrict who can access keys and secrets.
+- Key rotation: Replace keys periodically.
+- Auditing: Track key and secret usage.
+- Managed identities: Allow applications to access Key Vault without hard-coded credentials.
+
+### Remember for AZ-900
+- **Azure Key Vault = Secrets + Keys + Certificates.**
+- Never hard-code passwords or secrets in application code.
+- Encryption at rest = stored data.
+- Encryption in transit = moving data.
+
+
+# 9. Microsoft Defender for Cloud
+
+## Key points to remember
+
+- Microsoft Defender for Cloud = Cloud Security Posture Management (CSPM) + Threat Protection.    
+- Assess: Continuously identifies vulnerabilities and security risks.
+- Secure: Recommends improvements and calculates a Secure Score.
+- Defend: Detects threats and generates security alerts.
+- Multicloud: Supports Azure, AWS, and Google Cloud (GCP).
+- Hybrid: Can protect on-premises servers using Azure Arc.
+- Microsoft Cloud Security Benchmark (MCSB): Provides security best-practice recommendations.
+- Just-in-time (JIT) VM access: Limits exposure of VM management ports.
+- Security alerts: Describe threats, affected resources, and remediation steps.
+
+### Exam memory trick
+
+|Term|Remember|
+|---|---|
+|Assess|Find risks|
+|Secure|Improve security + Secure Score|
+|Defend|Detect threats + alerts|
+|Azure Arc|Extend protection to non-Azure machines|
+|MCSB|Security best practices|
+
+Most important: Defender for Cloud helps you assess, secure, and defend cloud resources. It is not just an antivirus; it also evaluates your security configuration and recommends improvements.
